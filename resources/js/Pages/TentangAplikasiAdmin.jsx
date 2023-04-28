@@ -4,6 +4,7 @@ import NavbarAdmin from '../Components/Admin/NavbarAdmin'
 import '../../../public/Assets/Admin/style.css'
 import 'boxicons/css/boxicons.min.css';
 import Logo2 from '../../../public/Assets/Images/Logo2.png'
+import FooterAdmin from '../Components/Admin/FooterAdmin';
 const TentangAplikasiAdmin = () => {
   return (
     <div>
@@ -36,14 +37,7 @@ const TentangAplikasiAdmin = () => {
 						</div>
 			</div>
             <br/>
-			<footer>
-			<center>
-			<div className="text">
-			<span>Dibuat Oleh <a href="#">Libman School</a> | &#169; 2023 Semua Hak Dilindungi Undang-Undang</span>
-			</div>
-			</center>
-			</footer>
-			<br/>
+      		<FooterAdmin />
       </main>
       </section>
     </div>

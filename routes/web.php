@@ -11,6 +11,10 @@ Route::get('/admin/dashboard', function () {
     return Inertia::render('DashboardAdmin');
 });
 
+Route::get('/admin/profile', function () {
+    return Inertia::render('Profile');
+});
+
 Route::get('/admin/tentangAplikasi', function () {
     return Inertia::render('TentangAplikasiAdmin');
 });

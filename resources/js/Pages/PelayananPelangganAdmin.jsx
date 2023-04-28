@@ -4,6 +4,7 @@ import NavbarAdmin from '../Components/Admin/NavbarAdmin'
 import '../../../public/Assets/Admin/style.css'
 import 'boxicons/css/boxicons.min.css';
 import Logo2 from '../../../public/Assets/Images/Logo2.png'
+import FooterAdmin from '../Components/Admin/FooterAdmin';
 
 const PelayananPelangganAdmin = () => {
   return (
@@ -14,7 +15,7 @@ const PelayananPelangganAdmin = () => {
       <main>
       <h1 className="title">Pelayanan Pelanggan</h1>
 			<ul className="breadcrumbs">
-				<li><a href="dashboard.php">Home</a></li>
+				<li><a href="dashboard">Home</a></li>
 				<li className="divider">/</li>
                 <li><a href="#" className="active">Bantuan</a></li>
                 <li className="divider">/</li>
@@ -37,9 +38,11 @@ const PelayananPelangganAdmin = () => {
 						<center>
 						<table className="table2">
 						<thead>
+							<tr>
 							<th><i className='bx bxl-instagram icon'></i>&nbsp;&nbsp;Instagram</th>
 							<th><i className='bx bxl-whatsapp icon'></i>&nbsp;&nbsp;WhatsApp</th>
 							<th><i className='bx bx-envelope icon'></i>&nbsp;&nbsp;Email</th>
+							</tr>
 						</thead>
 						<tbody>
 						<tr>
@@ -55,15 +58,8 @@ const PelayananPelangganAdmin = () => {
                     </div>
                     </div>
                     </div>
-                    <br/>
-			<footer>
-			<center>
-			<div className="text">
-			<span>Dibuat Oleh <a href="#">Libman School</a> | &#169; 2023 Semua Hak Dilindungi Undang-Undang</span>
-			</div>
-			</center>
-			</footer>
-			<br/>
+					<br/>
+      	<FooterAdmin />
         </main>
         </section>
     </div>

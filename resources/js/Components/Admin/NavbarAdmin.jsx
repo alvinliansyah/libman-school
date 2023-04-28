@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import profile from '../../../../public/Assets/Images/defaultPicture.jpg'
 
 function NavbarAdmin() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -6,12 +7,6 @@ function NavbarAdmin() {
 
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
-  };
-
-  const toggleMenu = (index) => {
-    const newShowMenu = [...showMenu];
-    newShowMenu[index] = !newShowMenu[index];
-    setShowMenu(newShowMenu);
   };
 
   const handleOutsideClick = (event) => {
@@ -27,36 +22,23 @@ function NavbarAdmin() {
       }
     }
 
-    allMenu.forEach((item, index) => {
-      const icon = item.querySelector('.icon');
-      const menuLink = item.querySelector('.menu-link');
-
-      if (!event.target.matches('.menu .icon')) {
-        if (!event.target.matches('.menu .menu-link')) {
-          if (showMenu[index]) {
-            toggleMenu(index);
-          }
-        }
-      }
-    });
   };
 
   window.addEventListener('click', handleOutsideClick);
 
   return (
     <nav>
-      <i className="bx bx-menu toggle-sidebar"></i>
       <form action="#">
       </form>
       <div className="profile">
         <img
-          src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          src={profile}
           alt=""
           onClick={toggleDropdown}
         />
         <ul className={`profile-link ${showDropdown ? 'show' : ''}`}>
           <li>
-            <a href="#">
+            <a href="profile">
               <i className="bx bxs-user-circle icon"></i> Profile
             </a>
           </li>

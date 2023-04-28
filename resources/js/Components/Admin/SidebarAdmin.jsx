@@ -33,9 +33,10 @@ const SidebarAdmin = () => {
 
   return (
     <section id="sidebar" className={isSidebarCollapsed ? 'hide' : ''}>
-      <a href="#" class="brand">
+      <a href="#" className="brand">
 			<img src={Logo} alt="" />
-			<span class="brand">Libman School</span>
+			<span className="brand">Libman School</span>
+      <i className="bx bx-menu toggle-sidebar" onClick={toggleSidebar}></i>
 		</a>
       <ul className="side-menu">
         <li>

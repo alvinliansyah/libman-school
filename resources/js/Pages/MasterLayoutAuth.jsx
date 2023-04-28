@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../../public/Assets/Auth/MasterLayoutAuth.css'
-import NavbarAuth from '../Components/Auth/navbarAuth'
+import NavbarAuth from '../Components/Auth/NavbarAuth'
 import BerandaAuth from './berandaAuth'
 import PelayananPelangganAuth from './PelayananPelangganAuth'
 import TentangAplikasiAuth from './TentangAplikasi'

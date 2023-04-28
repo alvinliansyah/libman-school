@@ -1,6 +1,9 @@
 import React from 'react'
+import '../../../public/Assets/Auth/MasterLayoutAuth.css'
 import LogoSekolah from '../../../public/Assets/Images/logosmp1bangsal.png'
 import FotoSekolah from '../../../public/Assets/Images/wander-fleur-1lmGTHdQdjM-unsplash.jpg'
+import FormMasuk from '../Components/Auth/FormMasuk';
+import FormLupaPassword from '../Components/Auth/FormLupaPassword';
 
 const BerandaAuth = () => {
   return (
@@ -32,40 +35,16 @@ const BerandaAuth = () => {
                  <div className="auth-form">
                    <header>Masuk</header>
                    <br/>
-               <p>Masukkan Nama Admin dan</p>
-               <p>Password untuk melanjutkan ke halaman berikutnya</p>
-                 <form method="post" action="#">
-                 <div  class="field input-field">
-                       <input type="text" class="form-control" style={{height: '50px',}} placeholder="Nama Admin" name ="namaAdmin" required />
-                     </div>
-                     <div  class="field input-field">
-                       <input type="password" class="form-control" style={{height: '50px',}} placeholder="Password" name ="password" required />
-                     </div>
-                     <div className="text"><label for="flip">Lupa Password?</label></div>
-                     <div class="button input-box">
-                       <input type="submit" value="Masuk" />
-                     </div>
-                   </form>
+                    <p>Masukkan Nama Admin dan</p>
+                    <p>Password untuk melanjutkan ke halaman berikutnya</p>
+                    <FormMasuk/>
                  </div>
                  <div className="forgetPassword-form">
                    <header>Lupa Password</header>
                    <br/>
                    <p>Silahkan masukkan Password baru anda</p>
-                   <form action="#" method="POST">
-                   <div class="field input-field">
-                       <input type="text" class="form-control" style={{height: '50px',}} placeholder="Nama Admin" name="nama" required />
-                     </div>
-                     <div class="field input-field">
-                       <input type="password" class="form-control" style={{height: '50px',}} placeholder="Password" name="password" required />
-                     </div>
-                     <div class="field input-field">
-                       <input type="password" class="form-control" style={{height: '50px',}} placeholder="Konfirmasi password" name="konfirmasiPassword" required />
-                     </div>
-                   <div class="button input-box">
-                       <input type="submit" value="Simpan" name="simpan" />
-                     </div>
-                     <div className="text forgetPassword-text"><label for="flip">Kembali ke masuk</label></div>
-             </form>
+                   <FormLupaPassword/>
+                   
            </div>
            </div>
     </div>

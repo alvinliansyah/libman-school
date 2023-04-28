@@ -201,7 +201,7 @@ li {
   .forms .form-content .text{
     font-size: 13px;
     font-weight: 400;
-    color: #333;
+    color: #1775F1;
   }
   .forms .form-content .text a{
     text-decoration: none;
@@ -233,7 +233,6 @@ li {
   }
   .forms .form-content .auth-text,
   .forms .form-content .forgetPassword-text{
-    text-align: center;
     margin-top: 25px;
   }
   .container #flip{
